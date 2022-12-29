@@ -6,4 +6,5 @@
 ## StreaME-APP
 * dees is gemaakt om mijn app te kunnen uitvoeren
 
-* Vergeet niet om een npm install te doen om alle nodeJS files te downloaden
+## Om die projecten te kunnen gebruiken
+* Vergeet niet om NodeJS te downloaden en in het begin in de terminal 'npm install' te schrijven!
