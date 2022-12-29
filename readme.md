@@ -1,5 +1,9 @@
-# Hey
+# Hey Hier zijn er 2 projecten
 
-## Hier zijn er 2 projecten, een om die app te kunnen gebruiken en een dat gemaakt is om testen te kunnen schrijven en te testen
+## Streame-TEST
+* dees is gemaakt om testen te schrijven en uit te voeren
+
+## StreaME-APP
+* dees is gemaakt om mijn app te kunnen uitvoeren
 
 * Vergeet niet om een npm install te doen om alle nodeJS files te downloaden
