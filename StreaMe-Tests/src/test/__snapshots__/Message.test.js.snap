@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should populate right message 1`] = `
+<ContextProvider>
+  <Message
+    message={
+      Object {
+        "img": "img-url",
+        "senderId": "wer-23-we-ewwer",
+        "text": "any message from user",
+      }
+    }
+  />
+</ContextProvider>
+`;

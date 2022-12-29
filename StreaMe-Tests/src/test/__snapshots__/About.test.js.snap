@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should take proper snapshot 1`] = `
+<section
+  className="flex md:flex-row flex-col sm:py-16 py-6"
+  id="features"
+>
+  <div
+    className="flex-1 flex justify-center items-start flex-col"
+  >
+    <h2
+      className="font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full "
+    >
+      You start a meeting, 
+      <br
+        className="sm:block hidden"
+      />
+       we’ll handle the communication.
+    </h2>
+    <p
+      className="font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px] max-w-[470px] mt-5"
+    >
+      StreaME is the place where 0 people gather live daily to chat, interact and create their own entertainment together.
+    </p>
+    <Button
+      styles="mt-10"
+    />
+  </div>
+  <div
+    className="flex-1 flex flex justify-center items-center md:ml-10 ml-0 md:mt-0 mt-10 relative flex-col"
+  >
+    <FeatureCard
+      content="This is where your creative content comes to fruition. If you bring your passions, we'll help you build a community around them."
+      icon="Star.svg"
+      id="feature-1"
+      index={0}
+      key="feature-1"
+      title="ShareYourDream"
+    />
+    <FeatureCard
+      content="Self-aware fans, welcome home. See what you like, connect with streamers and chat with countless communities"
+      icon="Shield.svg"
+      id="feature-2"
+      index={1}
+      key="feature-2"
+      title="Find your own thing"
+    />
+    <FeatureCard
+      content="Ready to build a real connection with a huge, engaged audience? We have no friends we'd like to introduce you to."
+      icon="Send.svg"
+      id="feature-3"
+      index={2}
+      key="feature-3"
+      title="Reach an audience"
+    />
+  </div>
+</section>
+`;
