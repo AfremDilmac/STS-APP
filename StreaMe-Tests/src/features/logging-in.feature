@@ -13,8 +13,8 @@ Feature: Logging in the application
     Then i should not be able to login
     And i should be able to request a password change
 
-    Scenario: A user wants to create a new account
-    Given i have an email address
-    When i create a new account
-    And i enter a new password
-    Then i should be able to login
+    # Scenario: A user wants to create a new account
+    # Given i have an email address
+    # When i create a new account
+    # And i enter a new password
+    # Then i should be able to login
