@@ -29,6 +29,9 @@
   "jest": {
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
+    ],
+    "testMatch": [
+      "**/*.steps.ts"
     ]
   },
   "eslintConfig": {
