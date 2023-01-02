@@ -1,16 +1,34 @@
 export class PasswordValidator {
+    
     private password: string | null = null;
-    private username: string | null = null;
+    private email: string | null = null;
 
     public setPassword(password: string) {
         this.password = password;
     }
 
-    public setUsername(username: string) {
-        this.username = username;
+    public validatePassword(claimedPassword: string, claimedEmail: string) {
+        return this.password === claimedPassword && this.email === claimedEmail;
     }
 
-    public validatePassword(claimedPassword: string, claimedUsername: string) {
-        return this.password === claimedPassword && this.username === claimedUsername;
+    setEmail(email: string) {
+        this.email = email;
+    }
+
+    createAccount(email: string, password: string) {
+        //create account
+
+        this.email = email;
+        this.password = password;
+
+        //check if email and password are not null
+        if(this.email != null && this.password != null){
+
+        return true;
+
+        }else{
+            return false;
+        }
+        
     }
 }
