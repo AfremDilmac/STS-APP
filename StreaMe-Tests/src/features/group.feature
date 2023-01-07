@@ -6,7 +6,7 @@ Feature: Add person to groupchat
     Given I am in the StreaME application
     And I am in a groupchat
     When I search another existing user by username
-    Then i should see the user's profile
+    Then i should see the users profile
     And the user should be added to the groupchat
 
     
