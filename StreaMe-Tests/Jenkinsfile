@@ -1,5 +1,3 @@
-/*Jenkinsfile (Declarative Pipeline) */
-/* Requires the Docker Pipeline plugin */
 pipeline {
     agent any
 
@@ -8,27 +6,19 @@ pipeline {
         stage('build') {
             
             steps {
-                echo 'building the app'
+                sh "echo 'building the app'"
             }
         }
-    }
-
-    stages {
-
         stage('test') {
             
             steps {
-                echo 'testing the app'
+                sh "echo 'testing the app'"
             }
         }
-    }
-
-    stages {
-
         stage('deploy') {
             
             steps {
-                echo 'deploying the app'
+                sh "echo 'deploying the app'"
             }
         }
     }
