@@ -4,19 +4,19 @@ const feature = loadFeature('src/features/delete-account.feature')
 
 defineFeature(feature, test => {
     let accountDeleted = false;
-    let loggidIn = false;
+    let loggedIn = false;
     let accountPrivate = false;
 
     beforeEach(() => {
         accountDeleted = false;
-        loggidIn = false;
+        loggedIn = false;
         accountPrivate = false;
     })
 
-    test('A user wants to delete his account', ({ given, when, then, and }) => {
+    test('Een gebruiker wil zijn account verwijderen', ({ given, when, then, and }) => {
 
         given('ik ben ingelogd', () => {
-            loggidIn = true;
+            loggedIn = true;
 
         })
         
@@ -32,17 +32,17 @@ defineFeature(feature, test => {
             expect(accountDeleted).toBe(true);
         });
 
-        and('word ik uitgelogd', () => {
-            expect(loggidIn).toBe(false);
-
+        and('wordt ik uitgelogd', () => {
+            loggedIn = false;
+            expect(loggedIn).toBe(false);
         });
 
     });
 
-    test('A user wants to set his account to private', ({ given, when, then, and }) => {
+    test('Een gebruiker wil zijn account op privé zetten', ({ given, when, then, and }) => {
             
             given('ik ben ingelogd', () => {
-                loggidIn = true;
+                loggedIn = true;
     
             })
 
@@ -50,24 +50,25 @@ defineFeature(feature, test => {
                 //Page definition
             })
 
-            and('ik op de knop maak account privé klik', () => {
+            and('ik op de knop account private maken klik', () => {
                 accountPrivate = true;
             })
 
-            then('wordt mijn account privé', () => {
+            then('wordt mijn account op private gezet', () => {
                 expect(accountPrivate).toBe(true);
             })
 
-            and('word ik uitgelogd', () => {
-                expect(loggidIn).toBe(false);
+            and('kunnen alleen mensen die ik volg mijn profiel zien', () => {
+                loggedIn = false;
+                expect(loggedIn).toBe(false);
     
             });
     })
 
-    test('A user wants to set his account to public', ({ given, when, then, and }) => {
+    test('Een gebruiker wil zijn account op openbaar zetten', ({ given, when, then, and }) => {
 
         given('ik ben ingelogd', () => {
-            loggidIn = true;
+            loggedIn = true;
 
         })
 
@@ -79,12 +80,13 @@ defineFeature(feature, test => {
             accountPrivate = false;
         })
 
-        then('wordt mijn account publiek', () => {
+        then('wordt mijn account op public gezet', () => {
             expect(accountPrivate).toBe(false);
         })
 
-        and('word ik uitgelogd', () => {
-            expect(loggidIn).toBe(false);
+        and('kunnen mensen die mij niet volgen mijn profiel zien', () => {
+            loggedIn = false;
+            expect(loggedIn).toBe(false);
 
         });
 
